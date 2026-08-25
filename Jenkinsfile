@@ -106,7 +106,7 @@ pipeline {
                         if [ "$STATUS" = "healthy" ]; then
 
                             curl -fsS \
-                                "http://127.0.0.1:3999/health"
+                                "http://127.0.0.1:$APP_PORT/health"
 
                             echo ""
                             echo "Application is healthy."
